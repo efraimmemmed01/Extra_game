@@ -1,11 +1,336 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://cdn.tailwindcss.com"></script>
+<title>XTRA Shop</title>
 </head>
-<body>
-    
+
+<body class="bg-black text-white relative">
+
+<!-- BACKGROUND -->
+<div class="fixed inset-0 -z-10">
+  <img src="assets/img/Background.jpg" alt="Background"
+       class="w-full h-full object-cover">
+  <div class="absolute inset-0 bg-black/80"></div>
+</div>
+
+<!-- HEADER -->
+<header class="flex justify-between items-center p-6 lg:px-20">
+
+  <!-- Logo -->
+  <div>
+    <h1 class="text-2xl font-bold">XTRA <br>GAMING</h1>
+    <p class="text-sm text-gray-400">WORDPRESS THEME</p>
+  </div>
+
+  
+  <!-- Burger (Mobile only) -->
+  <button id="burger" class="md:hidden bg-blue-600 p-3 rounded">
+    <i class="fa-solid fa-bars"></i>
+  </button>
+</header>
+
+<!-- MOBILE MENU -->
+<div id="mobileMenu"
+     class="hidden md:hidden bg-black/95 p-6 space-y-4 text-lg">
+  <p>Home</p>
+  <p>PS5</p>
+  <p>Xbox</p>
+  <p>Wii</p>
+  <p>PC</p>
+  <p>News</p>
+  <p class="text-blue-500">Shop</p>
+  <p>About</p>
+  <p>Contact</p>
+</div>
+
+  <!-- Desktop Menu -->
+  <body class="bg-slate-900">
+
+<nav class="bg-gradient-to-r w-[90%] mx-auto from-blue-700 to-indigo-600 shadow-lg flex items-center justify-center">
+  <div class="w-full flex justify-between items-center">
+    <div class="flex justify-between items-center h-14 w-full">
+      
+      <!-- Left Menu -->
+      <div class="flex items-center text-white gap-10 font-medium mx-[20px]">
+        <a href="#" class="hover:text-gray-200 transition">Home</a>
+        <a href="#" class="hover:text-gray-200 transition">PS5</a>
+        <a href="#" class="hover:text-gray-200 transition">Xbox</a>
+        <a href="#" class="hover:text-gray-200 transition">Wii</a>
+        <a href="#" class="hover:text-gray-200 transition">PC</a>
+        <a href="#" class="hover:text-gray-200 transition">News</a>
+        
+
+        <!-- Active Link -->
+        <a href="#" class="bg-black/30 px-3 py-1 rounded text-white">
+          Shop
+        </a>
+
+        <a href="#" class="hover:text-gray-200 transition">About</a>
+        <a href="#" class="hover:text-gray-200 transition">Contact</a>
+      </div>
+
+      <!-- Right Icons -->
+      <div class="flex items-center space-x-6 text-white">
+        <a href="#" class="hover:text-gray-300 transition"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" class="hover:text-gray-300 transition"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#" class="hover:text-gray-300 transition"><i class="fa-brands fa-vk"></i></a>
+        <a href="#" class="hover:text-gray-300 transition"><i class="fa-brands fa-twitch"></i></a>
+        <a href="#" class="hover:text-gray-300 transition"><i class="fa-solid fa-magnifying-glass"></i></a>
+      </div>
+  
+
+    </div>
+  </div>
+</nav>
+
+  <div class="w-[90%] mx-auto"><i class="fa-regular fa-house"></i> >Products >PS4 </div>
+
+<!-- SHOP TITLE -->
+<section class="text-center py-12">
+  <h2 class="text-4xl md:text-5xl font-bold mb-2">Shop</h2>
+  <p class="text-gray-400">Showing all 6 results</p>
+</section>
+
+<!-- FILTERS -->
+<div class="px-6 lg:px-20 flex flex-col md:flex-row justify-end gap-4 mb-10">
+  <select class="bg-blue-900/60 p-3 md:w-60">
+    <option>Default</option>
+  </select>
+  <select class="bg-blue-900/60 p-3 md:w-60">
+    <option>6 Products</option>
+  </select>
+</div>
+
+
+  <div class="flex flex-wrap justify-center gap-6 mb-5">
+
+    <!-- Active Card -->
+    <div class="bg-blue-600 text-white p-5 rounded-xl w-52 cursor-pointer shadow-lg">
+      <div class="flex items-center gap-2">
+        <div class="bg-white/20 p-2 rounded-lg">
+        <i class="fa-solid fa-shop"></i>
+        </div>
+        <div>
+          <h3 class="font-semibold ">All Products</h3>
+          <p class="text-sm text-blue-100">6 Items</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Other Cards -->
+    <div class="bg-slate-800 hover:bg-slate-700 text-white p-5 rounded-xl w-52 cursor-pointer transition duration-300">
+      <div class="flex items-center gap-2">
+        <div class="bg-slate-700 p-2 rounded-lg">
+       <i class="fa-regular fa-folder"></i>
+        </div>
+        <div>
+          <h3 class="font-semibold">PS4</h3>
+          <p class="text-sm text-slate-400">4 Items</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-slate-800 hover:bg-slate-700 text-white p-5 rounded-xl w-52 cursor-pointer transition duration-300">
+      <div class="flex items-center gap-2">
+        <div class="bg-slate-700 p-2 rounded-lg">
+          <i class="fa-regular fa-folder"></i>
+        </div>
+        <div>
+          <h3 class="font-semibold">Premium Sets</h3>
+          <p class="text-sm text-slate-400">3 Items</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-slate-800 hover:bg-slate-700 text-white p-5 rounded-xl w-52 cursor-pointer transition duration-300">
+      <div class="flex items-center gap-2">
+        <div class="bg-slate-700 p-2 rounded-lg">
+          <i class="fa-regular fa-folder"></i>
+        </div>
+        <div>
+          <h3 class="font-semibold">Limited Edition</h3>
+          <p class="text-sm text-slate-400">3 Items</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-slate-800 hover:bg-slate-700 text-white p-5 rounded-xl w-52 cursor-pointer transition duration-300">
+      <div class="flex items-center gap-2">
+        <div class="bg-slate-700 p-2 rounded-lg">
+          <i class="fa-regular fa-folder"></i>
+        </div>
+        <div>
+          <h3 class="font-semibold">Exclusive</h3>
+          <p class="text-sm text-slate-400">3 Items</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+<!-- PRODUCTS GRID -->
+<div class="px-6 lg:px-20 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 pb-32 md:pb-20">
+
+  <!-- CARD -->
+  <div class="relative border border-blue-600 p-4 hover:scale-105 transition">
+    <span class="absolute top-2 right-2 bg-blue-700 px-2 py-1 text-sm">$234</span>
+    <img src="assets/img/Gaming Headset XR.png"  alt="Gaming Headset XR" 
+         class="h-32 mx-auto mb-4 object-contain">
+    <h3 class="font-bold">Gaming Headset XR</h3>
+    <p class="text-gray-400 text-sm mb-3">Exclusive</p>
+    <button class="bg-blue-600 w-full py-2 hover:bg-blue-700 transition">
+      Add to cart
+    </button>
+  </div>
+
+  <div class="relative border border-blue-600 p-4 hover:scale-105 transition">
+    <span class="absolute top-2 right-2 bg-blue-700 px-2 py-1 text-sm">$300</span>
+    <img src="assets/img/Gaming Racing Wheel.png"  alt="Gaming Racing Wheel"
+         class="h-32 mx-auto mb-4 object-contain">
+    <h3 class="font-bold">Gaming Racing Wheel</h3>
+    <p class="text-gray-400 text-sm mb-3">Exclusive</p>
+    <button class="bg-blue-600 w-full py-2 hover:bg-blue-700 transition">
+      Add to cart
+    </button>
+  </div>
+
+  <div class="relative border border-blue-600 p-4 hover:scale-105 transition">
+    <span class="absolute top-2 right-2 bg-blue-700 px-2 py-1 text-sm">$999</span>
+    <img src="assets/img/Playstation 4 Pro.png" alt="Playstation 4 Pro"
+         class="h-32 mx-auto mb-4 object-contain">
+    <h3 class="font-bold">PlayStation 4 Pro</h3>
+    <p class="text-gray-400 text-sm mb-3">Exclusive</p>
+    <button class="bg-blue-600 w-full py-2 hover:bg-blue-700 transition">
+      Add to cart
+    </button>
+  </div>
+
+  <div class="relative border border-blue-600 p-4 hover:scale-105 transition">
+    <span class="absolute top-2 right-2 bg-blue-700 px-2 py-1 text-sm">$999</span>
+    <img src="assets/img/PlayStation 4 Pro Modem.png" alt="PlayStation 4 Pro Modem"
+         class="h-32 mx-auto mb-4 object-contain">
+    <h3 class="font-bold text-blue-400">PlayStation 4 Pro Modern</h3>
+    <p class="text-gray-400 text-sm mb-3">Limited Edition</p>
+    <button class="bg-blue-600 w-full py-2 hover:bg-blue-700 transition">
+      Add to cart
+    </button>
+  </div>
+
+   <div class="relative border border-blue-600 p-4 hover:scale-105 transition">
+    <span class="absolute top-2 right-2 bg-blue-700 px-2 py-1 text-sm">$999</span>
+    <img src="assets/img/PS4 DualShock.png" alt="PS4 DualShock"
+         class="h-32 mx-auto mb-4 object-contain">
+    <h3 class="font-bold">PlayStation 4 Pro</h3>
+    <p class="text-gray-400 text-sm mb-3">Exclusive</p>
+    <button class="bg-blue-600 w-full py-2 hover:bg-blue-700 transition">
+      Add to cart
+    </button>
+  </div>
+
+   <div class="relative border border-blue-600 p-4 hover:scale-105 transition">
+    <span class="absolute top-2 right-2 bg-blue-700 px-2 py-1 text-sm">$999</span>
+    <img src="assets/img/Xbox One.png" alt="Xbox One"
+         class="h-32 mx-auto mb-4 object-contain">
+    <h3 class="font-bold">PlayStation 4 Pro</h3>
+    <p class="text-gray-400 text-sm mb-3">Exclusive</p>
+    <button class="bg-blue-600 w-full py-2 hover:bg-blue-700 transition">
+      Add to cart
+    </button>
+  </div>
+
+</div>
+
+<footer class="relative bg-gradient-to-b from-[#0b1120] to-[#0e1a35] text-gray-300 overflow-hidden">
+
+  <!-- Background image overlay -->
+  <div class="absolute inset-0 opacity-10 bg-[url('https://images.unsplash.com/photo-1542751371-adc38448a05e')] bg-cover bg-center"></div>
+
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+
+    <!-- Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+
+      <!-- Left -->
+      <div>
+        <h2 class="text-3xl font-bold text-white mb-4">XTRA <br>GAMING</h2>
+        <h3 class="text-sm text-gray-400">WORDPRESS THEME</h3>
+        <p class="text-sm text-gray-200 mb-6 leading-relaxed">
+          Distinctively e-enable technically sound data rather than bleeding-edge 
+          resources assertively.
+        </p>
+       
+
+        <div class="space-y-3 text-sm">
+          <p class="flex items-center gap-3">
+            <span class="bg-blue-600 p-2 rounded-md text-white"><i class="fa-solid fa-headset"></i></span>
+            001 (818) 344 55 66
+          </p>
+          <p class="flex items-center gap-3">
+            <span class="bg-blue-600 p-2 rounded-md text-white"><i class="fa-solid fa-square-envelope"></i></span>
+            xtragame@site.com
+          </p>
+          <p class="flex items-center gap-3">
+            <span class="bg-blue-600 p-2 rounded-md text-white"><i class="fa-brands fa-skype"></i></span>
+            @xtratheme
+          </p>
+        </div>
+      </div>
+
+      <!-- Shortcuts -->
+      <div>
+        <h3 class="text-lg font-semibold text-white mb-5 border-b border-blue-500 pb-2">
+          Shortcuts
+        </h3>
+        <ul class="space-y-3 text-sm">
+          <li><a href="#" class="hover:text-blue-400 transition">Potato Mode</a></li>
+          <li><a href="#" class="hover:text-blue-400 transition">New Releases</a></li>
+          <li><a href="#" class="hover:text-blue-400 transition">GameSpot Live</a></li>
+          <li><a href="#" class="hover:text-blue-400 transition">XG Updates</a></li>
+          <li><a href="#" class="hover:text-blue-400 transition">Latest Reviews</a></li>
+          <li><a href="#" class="hover:text-blue-400 transition">Xbox vs PS4</a></li>
+          <li><a href="#" class="hover:text-blue-400 transition">Chat Support</a></li>
+        </ul>
+      </div>
+
+      <!-- Quick Access -->
+      <div>
+        <h3 class="text-lg font-semibold text-white mb-5 border-b border-blue-500 pb-2">
+          Quick Access
+        </h3>
+        <ul class="space-y-3 text-sm">
+          <li><a href="#" class="hover:text-blue-400 transition">My Account</a></li>
+          <li><a href="#" class="hover:text-blue-400 transition">Privacy Policy</a></li>
+          <li><a href="#" class="hover:text-blue-400 transition">Support Policy</a></li>
+          <li><a href="#" class="hover:text-blue-400 transition">Track Your Order</a></li>
+          <li><a href="#" class="hover:text-blue-400 transition">Comparisons</a></li>
+          <li><a href="#" class="hover:text-blue-400 transition">Our Partnerships</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="bg-gradient-to-r from-blue-700 to-indigo-600">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 
+                flex flex-col sm:flex-row items-center 
+                justify-between gap-3 text-sm text-white text-center sm:text-left">
+      
+      <p>Copyright 2026 Xtra Theme. All Rights Reserved</p>
+      
+      <div class="flex flex-wrap justify-center sm:justify-end gap-5">
+        <a href="#" class="hover:underline">Privacy Policy</a>
+        <a href="#" class="hover:underline">Advertisement</a>
+      </div>
+
+    </div>
+  </div>
+
+</footer>
+
 </body>
 </html>
